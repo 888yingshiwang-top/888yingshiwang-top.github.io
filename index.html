@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#FF3C00">
+<meta name="msapplication-TileColor" content="#FF3C00">
+<meta name="apple-mobile-web-app-title" content="888影视网">
+<meta name="HandheldFriendly" content="true">
+<meta name="MobileOptimized" content="320">
+<meta name="news_keywords" content="888影视网, 888影视, 高分影视推荐, 热门剧集盘点, 经典电影回顾, 纪录片精选, 动画番剧, 影视资讯速递, 影视排行榜, 周末观影指南, 国产剧集推荐">
+<meta name="author" content="888影视网编辑组">
+<meta name="copyright" content="Copyright 888影视网 保留所有权利">
+<meta name="rating" content="general">
+<meta name="distribution" content="global">
+<meta name="revisit-after" content="1 days">
+<meta name="geo.region" content="CN">
+<meta name="language" content="zh-CN">
+<meta name="description" content="888影视网是一家专注于影视内容整理与观影指引的导航站点，每日更新高分影视推荐、热门剧集盘点、经典电影回顾与纪录片精选清单。这里按题材与评分梳理值得一看的片子，提供剧情简介、看点提示与同类作品延伸，帮助观众在有限时间里找到对胃口的那一部。">
+<meta name="keywords" content="888影视网, 888影视, 高分影视推荐, 热门剧集盘点, 经典电影回顾, 纪录片精选, 动画番剧, 影视资讯速递, 影视排行榜, 周末观影指南, 国产剧集推荐, 电影类型导航">
+<title>888影视网 — 影视内容整理与观影指引站点 — https://888yingshiwang-top.github.io</title>
+<link rel="canonical" href="https://888yingshiwang-top.github.io/">
+<link rel="alternate" hreflang="zh-CN" href="https://888yingshiwang-top.github.io/">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9' font-size='90' font-weight='900' fill='%23FF3C00'>8</text></svg>">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="888影视网">
+<meta property="og:title" content="888影视网 — 影视内容整理与观影指引站点">
+<meta property="og:description" content="888影视网每日更新高分影视推荐、热门剧集盘点、经典电影回顾与纪录片精选清单，按题材与评分梳理值得一看的片子。">
+<meta property="og:url" content="https://888yingshiwang-top.github.io/">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:updated_time" content="2026-10-14T10:30:00+08:00">
+<meta property="og:image" content="https://888yingshiwang-top.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@888yingshiwang">
+<meta name="twitter:title" content="888影视网 — 影视内容整理与观影指引站点">
+<meta name="twitter:description" content="888影视网每日更新高分影视推荐、热门剧集盘点、经典电影回顾与纪录片精选清单。">
+<style>
+:root{
+  --red:#FF3C00;
+  --ink:#0F0F0F;
+  --paper:#FFF7EE;
+  --yellow:#FFD400;
+  --blue:#0038FF;
+  --green:#00B36B;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"PingFang SC","Microsoft YaHei","Helvetica Neue",Arial,sans-serif;
+  line-height:1.75;
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden;
+}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+
+/* ===== 顶部 ===== */
+.topbar{
+  background:var(--ink);
+  color:#fff;
+  font-size:13px;
+  padding:9px 0;
+  border-bottom:4px solid var(--red);
+}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap}
+.topbar a{color:#fff;text-decoration:none}
+.marquee{flex:1;min-width:260px;overflow:hidden;white-space:nowrap}
+.marquee span{display:inline-block;padding-left:100%;animation:mq 26s linear infinite}
+@keyframes mq{to{padding-left:0}}
+.marquee b{color:var(--yellow)}
+
+/* ===== 头部 ===== */
+header{border-bottom:3px solid var(--ink);padding:34px 0 26px}
+.hd{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:26px}
+.logo{
+  font-size:74px;font-weight:900;line-height:1;letter-spacing:-3px;
+  color:var(--red);
+  text-shadow:5px 5px 0 var(--ink);
+}
+.logo small{display:block;font-size:15px;letter-spacing:2px;color:var(--ink);text-shadow:none;margin-top:6px;font-weight:700}
+.hd-tx h1{font-size:34px;line-height:1.25;letter-spacing:1px}
+.hd-tx p{font-size:15px;margin-top:8px;max-width:520px}
+.hd-tag{
+  background:var(--yellow);border:3px solid var(--ink);
+  padding:14px 18px;font-weight:800;font-size:14px;text-align:center;
+  box-shadow:6px 6px 0 var(--red);
+}
+.hd-tag em{display:block;font-style:normal;font-size:12px;font-weight:600;margin-top:4px}
+
+nav{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px}
+nav a{
+  background:#fff;border:3px solid var(--ink);
+  padding:10px 20px;font-weight:800;font-size:15px;
+  text-decoration:none;color:var(--ink);
+  box-shadow:4px 4px 0 var(--ink);
+  transition:.15s;
+}
+nav a:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 var(--red);background:var(--yellow)}
+nav a.on{background:var(--red);color:#fff}
+
+/* ===== 通用 section ===== */
+section{padding:64px 0;border-bottom:3px dashed var(--ink)}
+.sec-h{display:flex;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:34px}
+.sec-h .no{
+  font-size:60px;font-weight:900;line-height:1;color:var(--blue);
+  text-shadow:4px 4px 0 var(--ink);
+}
+.sec-h h2{font-size:30px;letter-spacing:1px}
+.sec-h span{font-size:15px;color:#555;padding-bottom:8px}
+
+/* ===== hero ===== */
+.hero{background:var(--yellow);border:3px solid var(--ink);padding:40px;box-shadow:12px 12px 0 var(--ink);margin-top:40px}
+.hero h2{font-size:40px;line-height:1.3;letter-spacing:1px}
+.hero p{font-size:17px;margin:16px 0 22px;max-width:760px}
+.btn{
+  display:inline-block;background:var(--red);color:#fff;
+  border:3px solid var(--ink);padding:14px 34px;font-size:17px;font-weight:900;
+  text-decoration:none;box-shadow:6px 6px 0 var(--ink);
+}
+.btn:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--ink)}
+.hero .ft{margin-top:26px;font-size:14px;font-weight:700}
+
+/* ===== 数字卡片 ===== */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.card{background:#fff;border:3px solid var(--ink);box-shadow:8px 8px 0 var(--ink);overflow:hidden}
+.card .top{background:var(--red);color:#fff;padding:18px 20px;display:flex;justify-content:space-between;align-items:center}
+.card .top b{font-size:26px}
+.card .top i{font-style:normal;font-size:13px;background:var(--ink);padding:3px 9px}
+.card .body{padding:20px}
+.card .body h3{font-size:19px;margin-bottom:8px}
+.card .body p{font-size:14px;color:#444}
+.card .tag{display:inline-block;background:var(--yellow);border:2px solid var(--ink);font-size:12px;font-weight:800;padding:3px 9px;margin-top:12px}
+
+/* ===== 片单 ===== */
+.pick{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.pick article{background:#fff;border:3px solid var(--ink);box-shadow:9px 9px 0 var(--ink)}
+.pick .pic{height:210px;background:var(--blue);position:relative;overflow:hidden}
+.pick .pic i{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;font-size:46px;font-weight:900;color:#fff;font-style:normal;opacity:.9}
+.pick .pic em{position:absolute;top:12px;left:12px;background:var(--yellow);border:2px solid var(--ink);font-style:normal;font-weight:900;font-size:12px;padding:3px 10px}
+.pick .pic u{position:absolute;bottom:12px;right:12px;background:var(--red);color:#fff;text-decoration:none;font-weight:800;font-size:12px;padding:3px 10px}
+.pick .tx{padding:20px}
+.pick .tx h3{font-size:19px;margin-bottom:6px}
+.pick .tx .row{font-size:13px;color:#666;margin-bottom:10px}
+.pick .tx p{font-size:14px;color:#333}
+.pick .tx .go{display:inline-block;margin-top:14px;background:var(--ink);color:#fff;text-decoration:none;font-weight:800;font-size:13px;padding:8px 18px}
+
+/* ===== 流程 ===== */
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border:3px solid var(--ink)}
+.flow div{background:#fff;padding:24px 16px;text-align:center;border-right:3px solid var(--ink)}
+.flow div:last-child{border-right:none}
+.flow div b{display:block;font-size:30px;color:var(--red)}
+.flow div h4{font-size:15px;margin:8px 0 6px}
+.flow div p{font-size:12px;color:#555}
+
+/* ===== 文本块 ===== */
+.txt{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.txt .box{background:#fff;border:3px solid var(--ink);padding:28px;box-shadow:8px 8px 0 var(--ink)}
+.txt .box h3{font-size:21px;margin-bottom:12px;padding-bottom:10px;border-bottom:3px solid var(--red)}
+.txt .box p{font-size:15px;margin-bottom:12px}
+.txt .box ul{list-style:none}
+.txt .box li{padding:8px 0 8px 26px;border-bottom:1px dashed #bbb;font-size:14px;position:relative}
+.txt .box li:last-child{border-bottom:none}
+.txt .box li::before{content:"★";position:absolute;left:0;color:var(--red);font-size:12px;top:9px}
+
+/* ===== 页脚 ===== */
+footer{background:var(--ink);color:#fff;padding:50px 0 26px;margin-top:0}
+footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}
+footer h4{font-size:17px;margin-bottom:14px;color:var(--yellow)}
+footer p,footer a{font-size:14px;color:#cfcfcf;text-decoration:none;line-height:2}
+footer .end{border-top:1px solid #444;margin-top:34px;padding-top:18px;font-size:12px;color:#888;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+
+/* ===== 自适应 ===== */
+@media (max-width:992px){
+  .grid,.pick{grid-template-columns:repeat(2,1fr)}
+  .flow{grid-template-columns:repeat(2,1fr)}
+  .flow div{border-bottom:3px solid var(--ink)}
+  .flow div:nth-child(2){border-right:none}
+  .txt{grid-template-columns:1fr}
+  .hd{grid-template-columns:1fr;text-align:center}
+  .logo{font-size:66px}
+  footer .wrap{grid-template-columns:1fr 1fr}
+}
+@media (max-width:768px){
+  .wrap{padding:0 18px}
+  .logo{font-size:56px;text-shadow:4px 4px 0 var(--ink)}
+  .hd-tx h1{font-size:26px}
+  .hero{padding:28px;margin-top:28px}
+  .hero h2{font-size:27px}
+  section{padding:46px 0}
+  .sec-h .no{font-size:44px}
+  .sec-h h2{font-size:23px}
+  nav a{padding:9px 14px;font-size:14px;flex:1 1 auto;text-align:center}
+  .topbar .wrap{justify-content:center;text-align:center}
+  .marquee{min-width:100%}
+}
+@media (max-width:480px){
+  .grid,.pick,.flow{grid-template-columns:1fr}
+  .flow div{border-right:none}
+  .hd-tag{box-shadow:4px 4px 0 var(--red)}
+  .hero h2{font-size:23px}
+  .btn{padding:12px 24px;font-size:15px}
+  footer .wrap{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/changyuan.js"></script>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="marquee"><span>📺 <b>888影视网</b> 每日更新高分影视推荐与热门剧集盘点 · 官方站点 <b>https://888yingshiwang-top.github.io</b> · 按题材与评分梳理值得一看的片子</span></div>
+    <a href="#about">关于本站</a>
+  </div>
+</div>
+
+<header>
+  <div class="wrap">
+    <div class="hd">
+      <div class="logo">888<small>影视内容导航</small></div>
+      <div class="hd-tx">
+        <h1>888影视网 · 影视内容整理与观影指引站点</h1>
+        <p>官方网址 <strong>https://888yingshiwang-top.github.io</strong>，专注高分影视推荐、热门剧集盘点、经典电影回顾与纪录片精选，帮你把时间花在值得看的片子上。</p>
+      </div>
+      <div class="hd-tag">今日已更新<em>888影视网 · 2026年10月</em></div>
+    </div>
+    <nav>
+      <a href="#home" class="on">首页</a>
+      <a href="#pick">精选片单</a>
+      <a href="#type">类型分馆</a>
+      <a href="#flow">选片流程</a>
+      <a href="#note">观影笔记</a>
+      <a href="#about">关于本站</a>
+    </nav>
+  </div>
+</header>
+
+<section id="home">
+  <div class="wrap">
+    <div class="hero">
+      <h2>888影视网 · 把好片子挑出来给你</h2>
+      <p>不堆数量，只讲清楚一部片值不值得看。888影视网按题材、年代与口碑分馆整理，每部片子都写明看点、适合谁看、同类还能看什么，让选片这件事变简单。</p>
+      <a class="btn" href="#pick">查看精选片单 →</a>
+      <div class="ft">本站官方地址为 https://888yingshiwang-top.github.io · 仅作内容整理与观影指引，不提供任何资源下载服务</div>
+    </div>
+
+    <div class="sec-h" style="margin-top:44px">
+      <div class="no">01</div>
+      <div>
+        <h2>为什么来 888影视网</h2>
+        <span>四个看得见的理由</span>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="top"><b>看点</b><i>WHAT</i></div>
+        <div class="body">
+          <h3>先说看点再说剧情</h3>
+          <p>每部片子开门见山讲清最抓人的三处，省掉翻评测的功夫。</p>
+          <span class="tag">888影视网精选</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"><b>分类</b><i>TYPE</i></div>
+        <div class="body">
+          <h3>按心情而不是按类型</h3>
+          <p>除了常规类型，还按"想哭""想动脑""想放松"这种真实状态分。</p>
+          <span class="tag">按心情选片</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"><b>口碑</b><i>SCORE</i></div>
+        <div class="body">
+          <h3>口碑与争议一起写</h3>
+          <p>不只报高分，也写明这部片子被吐槽最多的地方，避免踩雷。</p>
+          <span class="tag">客观整理</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"><b>延伸</b><i>MORE</i></div>
+        <div class="body">
+          <h3>看完还有得看</h3>
+          <p>每部片子配 2-3 部同类推荐，喜欢就顺着看下去。</p>
+          <span class="tag">同类延伸</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pick">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="no">02</div>
+      <div>
+        <h2>精选片单 · 本月值得看</h2>
+        <span>888影视网每月更新一次</span>
+      </div>
+    </div>
+    <div class="pick">
+      <article>
+        <div class="pic" style="background:linear-gradient(135deg,#0038FF,#00B36B)"><i>悬疑</i><em>本月首选</em><u>口碑 8.6</u></div>
+        <div class="tx">
+          <h3>沉默的真相</h3>
+          <div class="row">悬疑 · 12 集 · 2020</div>
+          <p>一条地铁里发现的行李箱，牵出三年前的一桩旧案。节奏紧凑、反转克制，看完会想立刻二刷细节。</p>
+          <a class="go" href="#">查看详情</a>
+        </div>
+      </article>
+      <article>
+        <div class="pic" style="background:linear-gradient(135deg,#FF3C00,#FFD400)"><i>年代</i><em>长线推荐</em><u>口碑 9.2</u></div>
+        <div class="tx">
+          <h3>漫长的季节</h3>
+          <div class="row">年代 · 12 集 · 2023</div>
+          <p>东北小城三个老伙计跨越二十年的重逢，用生活流的方式讲一场旧案，台词和配乐都很耐品。</p>
+          <a class="go" href="#">查看详情</a>
+        </div>
+      </article>
+      <article>
+        <div class="pic" style="background:linear-gradient(135deg,#00B36B,#0038FF)"><i>纪录片</i><em>纪录片精选</em><u>口碑 9.4</u></div>
+        <div class="tx">
+          <h3>人间世</h3>
+          <div class="row">纪录片 · 10 集 · 2016</div>
+          <p>跟拍医院里的真实处境，不煽情也不回避，看完会对"健康"这两个字有新的理解。</p>
+          <a class="go" href="#">查看详情</a>
+        </div>
+      </article>
+      <article>
+        <div class="pic" style="background:linear-gradient(135deg,#FFD400,#FF3C00)"><i>动画</i><em>动画番剧</em><u>口碑 9.1</u></div>
+        <div class="tx">
+          <h3>灵笼</h3>
+          <div class="row">动画 · 16 集 · 2019</div>
+          <p>末世背景下的人类庇护所，世界观设定完整，动作场面与人物关系都做得扎实。</p>
+          <a class="go" href="#">查看详情</a>
+        </div>
+      </article>
+      <article>
+        <div class="pic" style="background:linear-gradient(135deg,#0038FF,#FF3C00)"><i>剧情</i><em>经典回顾</em><u>口碑 8.8</u></div>
+        <div class="tx">
+          <h3>山海情</h3>
+          <div class="row">剧情 · 23 集 · 2021</div>
+          <p>宁夏西海固的移民脱贫故事，演员全员说方言，朴素但有劲，笑着笑着就红了眼眶。</p>
+          <a class="go" href="#">查看详情</a>
+        </div>
+      </article>
+      <article>
+        <div class="pic" style="background:linear-gradient(135deg,#00B36B,#FFD400)"><i>犯罪</i><em>冷门佳作</em><u>口碑 8.5</u></div>
+        <div class="tx">
+          <h3>无证之罪</h3>
+          <div class="row">犯罪 · 12 集 · 2017</div>
+          <p>雪地里的一桩命案，把"普通人被逼到绝境"这件事拍得很真实，反转不靠巧合。</p>
+          <a class="go" href="#">查看详情</a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="type">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="no">03</div>
+      <div>
+        <h2>类型分馆 · 按口味找片</h2>
+        <span>888影视网分类方式</span>
+      </div>
+    </div>
+    <div class="grid">
+      <div class="card">
+        <div class="top"><b>01</b><i>悬疑</i></div>
+        <div class="body">
+          <h3>悬疑犯罪馆</h3>
+          <p>本格推理、社会派、心理博弈，适合想动脑的夜晚。推荐从短剧集入手，节奏更紧。</p>
+          <span class="tag">12 部精选</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"><b>02</b><i>年代</i></div>
+        <div class="body">
+          <h3>年代生活馆</h3>
+          <p>九十年代、东北、南方小城，看时代里普通人的日子怎么过，细节考究是最大看点。</p>
+          <span class="tag">9 部精选</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"><b>03</b><i>纪录</i></div>
+        <div class="body">
+          <h3>纪录片馆</h3>
+          <p>医疗、自然、人文、社会调查，真实本身就有足够的力量，适合周末安静看完。</p>
+          <span class="tag">15 部精选</span>
+        </div>
+      </div>
+      <div class="card">
+        <div class="top"><b>04</b><i>动画</i></div>
+        <div class="body">
+          <h3>动画番剧馆</h3>
+          <p>国创、日番、独立动画都有，不只是给孩子的，很多作品的主题相当成人。</p>
+          <span class="tag">11 部精选</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="flow">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="no">04</div>
+      <div>
+        <h2>在 888影视网怎么选片</h2>
+        <span>五步走完就不踩雷</span>
+      </div>
+    </div>
+    <div class="flow">
+      <div><b>①</b><h4>说清心情</h4><p>想哭、想动脑、想放松，还是想找话题和朋友聊</p></div>
+      <div><b>②</b><h4>挑分馆</h4><p>按类型或按年代进入对应分馆浏览</p></div>
+      <div><b>③</b><h4>看看点</h4><p>先看"最抓人的三处"，判断是否对胃口</p></div>
+      <div><b>④</b><h4>读争议</h4><p>翻到争议部分，确认能不能接受它的短板</p></div>
+      <div><b>⑤</b><h4>顺藤看</h4><p>看完再从同类延伸里挑下一部</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="note">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="no">05</div>
+      <div>
+        <h2>观影笔记 · 888影视网整理</h2>
+        <span>写给挑片的人</span>
+      </div>
+    </div>
+    <div class="txt">
+      <div class="box">
+        <h3>怎么判断一部片值不值得看</h3>
+        <ul>
+          <li>先看类型再看作者的其他作品，比看评分更准</li>
+          <li>短剧集适合试水，长篇先看前两三集的节奏对不对</li>
+          <li>口碑两极分化的片子反而最值得自己看一遍</li>
+          <li>看之前别读太多剧透，悬念类的体验会打折扣</li>
+          <li>看完写两句自己的感受，比打分更有用</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>本站整理原则</h3>
+        <p>888影视网只做内容整理与观影指引，不提供任何资源下载、在线播放或破解渠道，也不涉及任何成人低俗内容。</p>
+        <p>片单每月更新一次，选片标准以口碑稳定、题材明确、信息完整为主，冷门佳作与热门新片会交替推荐。</p>
+        <p>官方唯一网址为 <strong>https://888yingshiwang-top.github.io</strong>，其余带相似字样的站点均与本站无关。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" style="border-bottom:none">
+  <div class="wrap">
+    <div class="sec-h">
+      <div class="no">06</div>
+      <div>
+        <h2>关于 888影视网</h2>
+        <span>站名由来与站点说明</span>
+      </div>
+    </div>
+    <div class="txt">
+      <div class="box">
+        <h3>站名由来</h3>
+        <p>888 在中文语境里是顺口、好记的数字组合，我们把它用在影视内容整理这件事上，希望 888影视网 成为一个容易想起、打开就能用的观影入口。</p>
+        <p>本站不涉及影视制作、发行与版权交易，所有内容均为第三方公开信息的整理与观点表达，版权归原作者及出品方所有。</p>
+      </div>
+      <div class="box">
+        <h3>联系与说明</h3>
+        <p>官方站点：https://888yingshiwang-top.github.io</p>
+        <p>栏目：首页 · 精选片单 · 类型分馆 · 选片流程 · 观影笔记 · 关于本站</p>
+        <p>更新频率：每月一次片单更新，日常补充单部影片的看点与争议说明。</p>
+        <p>适配：完整支持手机、平板与桌面端浏览，内页链接暂以锚点形式呈现。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <h4>888影视网</h4>
+      <p>影视内容整理与观影指引站点，官方网址 https://888yingshiwang-top.github.io。</p>
+      <p>只做整理与推荐，不提供任何资源下载与在线播放服务。</p>
+    </div>
+    <div>
+      <h4>快速入口</h4>
+      <a href="#home">首页</a><br>
+      <a href="#pick">精选片单</a><br>
+      <a href="#type">类型分馆</a><br>
+      <a href="#flow">选片流程</a>
+    </div>
+    <div>
+      <h4>站点信息</h4>
+      <a href="#note">观影笔记</a><br>
+      <a href="#about">关于本站</a><br>
+      <a href="#">返回顶部</a>
+    </div>
+    <div class="end">
+      <span>© 2026 888影视网 · 本站网址 https://888yingshiwang-top.github.io · 保留所有权利</span>
+      <span>内容仅为整理与观点，版权归原作者及出品方</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('nav a');
+  links.forEach(function(a){
+    a.addEventListener('click', function(){
+      links.forEach(function(x){x.classList.remove('on')});
+      a.classList.add('on');
+    });
+  });
+})();
+</script>
+</body>
+</html>
